@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Map App</string>
+
+    <string name="openNavDrawer">Open</string>
+    <string name="closeNavDrawer">Close</string>
+
+
+    <string name="mapbox_access_token">pk.eyJ1IjoieWFzaW50b2hhbiIsImEiOiJja3N6eG15NmwwN3NpMnBxdDg4eGFob2MxIn0.68r0HBHztMYP8Y1wqxyAcg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,37 @@
+// https://hackernoon.com/configuring-android-project-version-name-code-b168952f3323#.fcoiok3lv
+
+apply from: "${rootDir}/gradle/dependencies.gradle"
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath pluginDependencies.grgit
+    }
+}
+
+import org.ajoberstar.grgit.Grgit
+
+/**
+ * git.describe()
+ *
+ * Find the most recent tag that is reachable from HEAD. If the tag points to the commit,
+ * then only the tag is shown. Otherwise, it suffixes the tag name with the number of additional
+ * commits on top of the tagged object and the abbreviated object name of the most recent commit.
+ *
+ * More info: https://git-scm.com/docs/git-describe
+ */
+
+ext {
+    try {
+        git = Grgit.open(currentDir: projectDir)
+        gitVersionName = git.describe()
+        gitVersionCode = git.tag.list().size() + 52 // + base version code
+        gitVersionCodeTime = git.head().time
+    } catch (Exception exception) {
+        gitVersionName = "1.0"
+        gitVersionCode = 2
+        gitVersionCodeTime = 1484407970
+    }
+}

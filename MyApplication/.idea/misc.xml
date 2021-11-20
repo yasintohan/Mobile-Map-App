@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/yasin/.gradle/caches/transforms-3/8d4dd80b63faff11f153a3bad98628b9/transformed/jetified-mapbox-android-navigation-ui-0.15.0/res/layout/navigation_view_layout.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/yasin/.gradle/caches/transforms-3/a3e730bb72165bc718c41dafa2d4ab90/transformed/jetified-mapbox-android-navigation-ui-0.18.0/res/layout/navigation_view_layout.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/yasin/.gradle/caches/transforms-3/b6d054158679bcacd4c058c9c81301cf/transformed/jetified-mapbox-android-navigation-ui-0.17.0/res/layout/navigation_view_layout.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/yasin/.gradle/caches/transforms-3/d021487e26feed2b1636d9a101d2a9c4/transformed/jetified-mapbox-android-navigation-ui-0.19.0/res/layout/navigation_view_layout.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_home.xml" value="0.14427083333333332" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_round_location_searching_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_twotone_home.xml" value="0.2703125" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_calculate_area.xml" value="0.264" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/add_area_modal.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/add_marker_modal.xml" value="0.264" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/area_list_item.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_area_list_modal.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_list_item.xml" value="0.4" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_list_modal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_marker_detail_modal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_search_modal.xml" value="0.4" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_update_marker_modal.xml" value="0.264" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_home.xml" value="0.11927083333333334" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/header_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/layers_modal.xml" value="0.4" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/menu/navbar_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yasin/AndroidStudioProjects/MyApplication/app/src/main/res/menu/toolbar_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

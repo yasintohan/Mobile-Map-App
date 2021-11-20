@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/marker_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/marker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Marker Title"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/marker_icon"
+        app:layout_constraintStart_toEndOf="@+id/marker_icon"
+        app:layout_constraintTop_toTopOf="@+id/marker_icon" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/info_btn"
+        style="@style/MainMapIcons"
+        android:backgroundTint="@color/color_blue"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:icon="@drawable/ic_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/focus_btn"
+        style="@style/MainMapIcons"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:icon="@drawable/ic_my_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/info_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/direction_btn"
+        style="@style/MainMapIcons"
+        android:backgroundTint="@color/color_red"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:icon="@drawable/ic_location_on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/focus_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- <com.google.android.material.textview.MaterialTextView
+         android:id="@+id/marker_description"
+         android:layout_width="133dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="8dp"
+         android:layout_marginEnd="8dp"
+         android:layout_marginBottom="16dp"
+         android:singleLine="false"
+         android:text="Marker description Marker description Marker description "
+         android:textSize="14dp"
+         android:textAlignment="center"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="@+id/marker_title"
+         app:layout_constraintStart_toStartOf="@+id/marker_title"
+         app:layout_constraintTop_toBottomOf="@+id/marker_title" />
+ -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

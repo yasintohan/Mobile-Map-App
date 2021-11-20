@@ -1,0 +1,159 @@
+ext {
+    androidVersions = [
+            minSdkVersion    : 16,
+            minWearSdkVersion: 23,
+            targetSdkVersion : 29,
+            compileSdkVersion: 29,
+            buildToolsVersion: '29.0.2'
+    ]
+
+    version = [
+
+            // Mapbox
+            mapboxMapPluginPrefix    : 'v9',
+            mapboxMapSdk             : '9.6.0-alpha.1',
+            mapboxJavaSdk            : '5.5.0',
+            mapboxPluginBuilding     : '0.7.0',
+            mapboxPluginPlaces       : '0.12.0',
+            mapboxPluginLocalization : '0.12.0',
+            mapboxPluginTraffic      : '0.10.0',
+            mapboxChinaPlugin        : '2.4.0',
+            mapboxPluginMarkerView   : '0.4.0',
+            mapboxPluginAnnotation   : '0.9.0',
+            mapboxPluginScalebar     : '0.5.0',
+
+            // Support
+            legacySupportV4          : '1.0.0',
+            androidXLib              : '1.0.0',
+            androidXAnnotation       : '1.1.0',
+            androidXMaterialDesign   : '1.1.0-alpha07',
+            androidXConstraintLayout : '1.1.3',
+            firebaseCore             : '17.5.1',
+            firebasePerf             : '18.0.1',
+            firebaseCrashlytics      : '17.2.2',
+            firebaseMessaging        : '19.0.1',
+            firebaseRemoteConfig     : '18.0.0',
+
+            // Square
+            leakCanary               : '1.5.4',
+            timber                   : '4.7.1',
+            okthttp3                 : '3.8.1',
+            picasso                  : '2.5.2',
+            retrofit                 : '2.2.0',
+
+            // Other
+            gson                     : '2.8',
+            segmentAnalytics         : '2.0.0',
+            materialStyleDialog      : '2.1',
+            baseFab                  : '1.10.1',
+            materialDialogsCommons   : '0.9.6.0',
+            espresso                 : '3.1.0',
+            testRunner               : '1.1.0',
+            junit                    : '1.0.0',
+            supportAnnotations       : '27.1.1',
+            kotlin                   : '1.2.70',
+            multiDex                 : '2.0.0',
+            biometric                : '1.0.0'
+    ]
+
+    wearVersion = [
+            googleWearable   : '2.3.0',
+            googlePlayService: '17.0.0',
+            wearableUiX      : '1.0.0',
+    ]
+
+    pluginVersion = [
+            checkstyle          : '8.2',
+            firebasePerformance : '1.2.1',
+            gradle              : '3.4.2',
+            kotlin              : '1.3.41',
+            dependencyGraph     : '0.3.0',
+            grgit               : '2.3.0',
+            fabric              : '2.3.0',
+            kotlinLint          : '1.26.0',
+            googleServices      : '4.3.0',
+    ]
+
+    dependenciesList = [
+            // Mapbox
+            mapboxMapSdk             : "com.mapbox.mapboxsdk:mapbox-android-sdk:${version.mapboxMapSdk}",
+            mapboxTurf               : "com.mapbox.mapboxsdk:mapbox-sdk-turf:${version.mapboxJavaSdk}",
+            mapboxServices           : "com.mapbox.mapboxsdk:mapbox-sdk-services:${version.mapboxJavaSdk}",
+
+            // Mapbox plugins
+            mapboxPluginBuilding     : "com.mapbox.mapboxsdk:mapbox-android-plugin-building-${version.mapboxMapPluginPrefix}:${version.mapboxPluginBuilding}",
+            mapboxPluginPlaces       : "com.mapbox.mapboxsdk:mapbox-android-plugin-places-${version.mapboxMapPluginPrefix}:${version.mapboxPluginPlaces}",
+            mapboxPluginLocalization : "com.mapbox.mapboxsdk:mapbox-android-plugin-localization-${version.mapboxMapPluginPrefix}:${version.mapboxPluginLocalization}",
+            mapboxPluginTraffic      : "com.mapbox.mapboxsdk:mapbox-android-plugin-traffic-${version.mapboxMapPluginPrefix}:${version.mapboxPluginTraffic}",
+            mapboxChinaPlugin        : "com.mapbox.mapboxsdk:mapbox-android-plugin-china:${version.mapboxChinaPlugin}",
+            mapboxPluginMarkerView   : "com.mapbox.mapboxsdk:mapbox-android-plugin-markerview-${version.mapboxMapPluginPrefix}:${version.mapboxPluginMarkerView}",
+            mapboxPluginAnnotation   : "com.mapbox.mapboxsdk:mapbox-android-plugin-annotation-${version.mapboxMapPluginPrefix}:${version.mapboxPluginAnnotation}",
+            mapboxPluginScalebar     : "com.mapbox.mapboxsdk:mapbox-android-plugin-scalebar-${version.mapboxMapPluginPrefix}:${version.mapboxPluginScalebar}",
+
+            // Support
+            supportAppcompatV4       : "androidx.legacy:legacy-support-v4:${version.legacySupportV4}",
+            supportAppcompatV7       : "androidx.appcompat:appcompat:${version.androidXLib}",
+            supportMaterialDesign    : "com.google.android.material:material:${version.androidXMaterialDesign}",
+            supportRecyclerView      : "androidx.recyclerview:recyclerview:${version.androidXLib}",
+            supportCardView          : "androidx.cardview:cardview:${version.androidXLib}",
+            supportGridLayout        : "androidx.gridlayout:gridlayout:${version.androidXLib}",
+            supportCustomTabs        : "androidx.browser:browser:${version.androidXLib}",
+            supportConstraintLayout  : "androidx.constraintlayout:constraintlayout:${version.androidXConstraintLayout}",
+            supportAnnotations       : "androidx.annotation:annotation:${version.androidXAnnotation}",
+            supportAnimation         : "androidx.dynamicanimation:dynamicanimation:${version.androidXLib}",
+
+            // Square
+            timber                   : "com.jakewharton.timber:timber:${version.timber}",
+            okhttp3                  : "com.squareup.okhttp3:okhttp:${version.okthttp3}",
+            picasso                  : "com.squareup.picasso:picasso:${version.picasso}",
+            retrofit                 : "com.squareup.retrofit2:retrofit:${version.retrofit}",
+            retrofitGsonConverter    : "com.squareup.retrofit2:converter-gson:${version.retrofit}",
+            leakCanaryDebug          : "com.squareup.leakcanary:leakcanary-android:${version.leakCanary}",
+            leakCanaryRelease        : "com.squareup.leakcanary:leakcanary-android-no-op:${version.leakCanary}",
+
+            // Firebase
+            firebasePerf             : "com.google.firebase:firebase-perf:${version.firebasePerf}",
+            firebaseCore             : "com.google.firebase:firebase-core:${version.firebaseCore}",
+            firebaseCrashlytics      : "com.google.firebase:firebase-crashlytics:${version.firebaseCrashlytics}",
+            firebaseMessaging        : "com.google.firebase:firebase-messaging:${version.firebaseMessaging}",
+            firebaseRemoteConfig     : "com.google.firebase:firebase-config:${version.firebaseRemoteConfig}",
+
+            // Other
+            gson                     : "com.google.code.gson:gson:${version.gson}",
+            segmentAnalytics         : "com.segment.analytics.java:analytics:${version.segmentAnalytics}",
+            materialStyleDialog      : "com.github.javiersantos:MaterialStyledDialogs:${version.materialStyleDialog}",
+            baseFab                  : "com.getbase:floatingactionbutton:${version.baseFab}",
+            materialDialogsCommons   : "com.afollestad.material-dialogs:commons:${version.materialDialogsCommons}",
+            kotlin                   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${version.kotlin}",
+            multiDex                 : "androidx.multidex:multidex:${version.multiDex}",
+            biometric                : "androidx.biometric:biometric:${version.biometric}",
+
+            // Testing
+            testEspressoCore         : "androidx.test.espresso:espresso-core:${version.espresso}",
+            testEspressoIntents      : "androidx.test.espresso:espresso-intents:${version.espresso}",
+            testEspressoContrib      : "androidx.test.espresso:espresso-contrib:${version.espresso}",
+            testRunner               : "androidx.test:runner:${version.testRunner}",
+            testRules                : "androidx.test:rules:${version.testRunner}",
+            junit                    : "androidx.test.ext:junit:${version.junit}",
+    ]
+
+    pluginDependencies = [
+            gradle              : "com.android.tools.build:gradle:${pluginVersion.gradle}",
+            checkstyle          : "com.puppycrawl.tools:checkstyle:${pluginVersion.checkstyle}",
+            firebasePerformance : "com.google.firebase:perf-plugin:${pluginVersion.firebasePerformance}",
+            kotlin              : "org.jetbrains.kotlin:kotlin-gradle-plugin:${pluginVersion.kotlin}",
+            dependencyGraph     : "com.vanniktech:gradle-dependency-graph-generator-plugin:${pluginVersion.dependencyGraph}",
+            grgit               : "org.ajoberstar:grgit:${pluginVersion.grgit}",
+            fabric              : "com.google.firebase:firebase-crashlytics-gradle:${pluginVersion.fabric}",
+            googleServices      : "com.google.gms:google-services:${pluginVersion.googleServices}",
+            kotlinLint          : "org.jmailen.gradle:kotlinter-gradle:${pluginVersion.kotlinLint}"
+    ]
+
+    wearDependencies = [
+            googleWearable       : "com.google.android.wearable:wearable:${wearVersion.googleWearable}",
+            wearableUiX          : "androidx.wear:wear:${wearVersion.wearableUiX}",
+            supportGoogleWearable: "com.google.android.support:wearable:${wearVersion.googleWearable}",
+            gpsWearable          : "com.google.android.gms:play-services-wearable:${wearVersion.googlePlayService}",
+            gpsLocation          : "com.google.android.gms:play-services-location:${wearVersion.googlePlayService}"
+    ]
+}
